@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 576px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .items {
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            /* gap: 50px; */
+            /* gap: 10px; */
+            /* column-gap: 20px; */
+
+
+        }
+
+        .part1 {
+            height: 60%;
+            width: 100%;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .part2 {
+            height: 40%;
+            width: 100%;
+            padding-top: 10px;
+
+        }
+
+        .row1,
+        .row2 {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            column-gap: 20px;
+
+        }
+
+        .row2>.items {
+            margin-top: 10px;
+        }
+
+        .para {
+            text-align: center;
+        }
+
+        .button {
+            padding-top: 6px;
+            position: relative;
+            left: 10px;
+            /* gap: 10px; */
+
+            border-radius: 2px;
+        }
+
+        .button1,
+        .button2 {
+            border: 2px solid gray;
+            font-size: 14px;
+            padding: 3px;
+        }
+
+        .button2 {
+            position: relative;
+            right: 5px;
+
+        }
+
+        @media (max-width:768px) {
+
+            .row1,
+            .row2 {
+                flex-direction: column;
+            }
+        }
+
+        @media (min-width:773px) and (max-width:1068px) {
+            .items {
+                height: 350px;
+                width: 450px;
+            }
+
+            .part1 {
+                height: 55%;
+            }
+
+            .part2 {
+                height: 45%;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="items">
+                <div class="part1">Thumbnail</div>
+                <div class="part2">
+                    <div class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem harum vel
+                        praesentium
+                        tempora provident reiciendis autem aut accusantium inventore minus?</div>
+                    <div class="button">
+                        <button class="button1">View</button>
+                        <button class="button2">Edit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="part1">Thumbnail</div>
+                <div class="part2">
+                    <div class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem harum vel
+                        praesentium
+                        tempora provident reiciendis autem aut accusantium inventore minus?</div>
+                    <div class="button">
+                        <button class="button1">View</button>
+                        <button class="button2">Edit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="part1">Thumbnail</div>
+                <div class="part2">
+                    <div class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem harum vel
+                        praesentium
+                        tempora provident reiciendis autem aut accusantium inventore minus?</div>
+                    <div class="button">
+                        <button class="button1">View</button>
+                        <button class="button2">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="items">
+                <div class="part1">Thumbnail</div>
+                <div class="part2">
+                    <div class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem harum vel
+                        praesentium
+                        tempora provident reiciendis autem aut accusantium inventore minus?</div>
+                    <div class="button">
+                        <button class="button1">View</button>
+                        <button class="button2">Edit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="part1">Thumbnail</div>
+                <div class="part2">
+                    <div class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem harum vel
+                        praesentium
+                        tempora provident reiciendis autem aut accusantium inventore minus?</div>
+                    <div class="button">
+                        <button class="button1">View</button>
+                        <button class="button2">Edit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="part1">Thumbnail</div>
+                <div class="part2">
+                    <div class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem harum vel
+                        praesentium
+                        tempora provident reiciendis autem aut accusantium inventore minus?</div>
+                    <div class="button">
+                        <button class="button1">View</button>
+                        <button class="button2">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
